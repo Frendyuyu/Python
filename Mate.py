@@ -28,9 +28,13 @@ Material Class
 
 # 驱动电源 Driver   (Materials ==>> Sub Class)
 class Driver(Materials):
-	def __init__(self, mate_code, mate_type, mate_quantity):
-		super.__init__(mate_code, mate_type, mate_quantity)
-		# self.batch = batch
+	def __init__(self, mate_code, mate_type, mate_quantity, batch):
+		super().__init__(mate_code, mate_type, mate_quantity)
+		# Materials.__init__(mate_code, mate_type, mate_quantity)
+		# ERROR:	2018/10/06 PM 06:57 直接用父类名"."不能继承父类的属性
+		# Materials.__init__(self, mate_code, mate_type, mate_quantity)
+		# CORRECT:	2018/10/06 PM 07:07 直用父类名"."来继承父类的属性，第一个必须是 "self"
+		self.batch = batch					# batch 批次作割接
 
 
 # 灯条 Light Bar    (Materials ==>> Sub Class)

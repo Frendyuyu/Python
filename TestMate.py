@@ -11,14 +11,17 @@ if __name__ == "__main__":
 	print(Materials.__doc__)
 
 	print("*****" * 20)
-	print("Driver test:")
+	print("Materials test:")
 	p0 = Materials("3400200001", "driver", 10000)
 	print(p0.__dict__)
 
 	print("*****" * 20)
 	print("Driver test:")
 
-	Driver("3400200001", "driver", 10000)
-	print(Driver.__dict__)
+	p1 = Driver("3400200001", "driver", 10000, "19320392-123")
+	# print(Driver.__dict__)
+	print(p1.__dict__)
+	# print(p1.__init__)
+
 
 
