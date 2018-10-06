@@ -28,9 +28,9 @@ Material Class
 
 # 驱动电源 Driver   (Materials ==>> Sub Class)
 class Driver(Materials):
-	def __init__(self, mate_code, mate_type, mate_quantity, batch):
-		Materials.__init__(mate_code, mate_type, mate_quantity)
-		self.batch = batch
+	def __init__(self, mate_code, mate_type, mate_quantity):
+		super.__init__(mate_code, mate_type, mate_quantity)
+		# self.batch = batch
 
 
 # 灯条 Light Bar    (Materials ==>> Sub Class)

@@ -10,10 +10,15 @@ if __name__ == "__main__":
 	print("=====" * 50)
 	print(Materials.__doc__)
 
-	print("*****" * 50)
-	print("Driver test:" )
+	print("*****" * 20)
+	print("Driver test:")
+	p0 = Materials("3400200001", "driver", 10000)
+	print(p0.__dict__)
 
-	p1 = Driver("3400200001", "driver", 1000, "18090889-600")
-	print(p1)
+	print("*****" * 20)
+	print("Driver test:")
+
+	Driver("3400200001", "driver", 10000)
+	print(Driver.__dict__)
 
 
