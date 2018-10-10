@@ -25,6 +25,18 @@ Material Class
 		self.mate_type = mate_type 				# 类型 Material type
 		self.mate_quantity = mate_quantity		# 数量 Material Quantity
 
+	def warehousing(self, depa_in, depa_out):  # 入库 Warehousing (Class method)
+		pass
+
+	def retreating(self,depa_in, depa_out): # 退料 Retreating (Class method)
+		pass
+
+	def rework(self, depa_in, depa_out): # 返修 Rework (Class method)
+		pass
+
+	def balance(self,depa_in, depa_out):  # 结余 Balance (Class method)
+		pass
+
 
 # 驱动电源 Driver   (Materials ==>> Sub Class)
 class Driver(Materials):
