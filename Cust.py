@@ -1,6 +1,10 @@
 class CustomerOrd(object):
+	"""
+# CustomerOrder  # 客户定单 Customer Order (Parent Class)
 
-	def __init__(self, customer, batch,power, cascade, color_tem, single_end, double_end, plan_num):
+	"""
+
+	def __init__(self, customer, batch, power, cascade, color_tem, single_end, double_end, plan_num):
 		self.customer = customer   			# 客户                    (Class attribute)
 		self.batch = batch       			# 批次                    (Class attribute)
 		self.power = power        			# 功率                    (Class attribute)

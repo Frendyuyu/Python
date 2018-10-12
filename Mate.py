@@ -19,19 +19,19 @@ Material Class
 		Balance      # 结余 Balance (Class method)
 
 	"""
-
 	def __init__(self, mate_code, mate_type, mate_quantity):
 		self.mate_code = mate_code				# 编码 Material code
 		self.mate_type = mate_type 				# 类型 Material type
 		self.mate_quantity = mate_quantity		# 数量 Material Quantity
 
 	def warehousing(self, depa_in, depa_out):  # 入库 Warehousing (Class method)
+
 		pass
 
-	def retreating(self,depa_in, depa_out): # 退料 Retreating (Class method)
+	def retreating(self,depa_in, depa_out):  # 退料 Retreating (Class method)
 		pass
 
-	def rework(self, depa_in, depa_out): # 返修 Rework (Class method)
+	def rework(self, depa_in, depa_out):  # 返修 Rework (Class method)
 		pass
 
 	def balance(self,depa_in, depa_out):  # 结余 Balance (Class method)
@@ -67,7 +67,3 @@ class PowderTub(Materials):
 # 堵头 Plugging     (Materials ==>> Sub Class)
 class Plugging(Materials):
 	pass
-
-
-
-
